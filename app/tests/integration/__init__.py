@@ -1,4 +1,4 @@
-# Copyright (c) 2023-2024 Contributors to the Eclipse Foundation
+# Copyright (c) 2022-2024 Contributors to the Eclipse Foundation
 #
 # This program and the accompanying materials are made available under the
 # terms of the Apache License, Version 2.0 which is available at
@@ -11,10 +11,3 @@
 # under the License.
 #
 # SPDX-License-Identifier: Apache-2.0
-
-grpcio==1.59.0
-protobuf==4.24.4
-dapr==1.11.0
-cloudevents==1.10.0
-aiohttp==3.9.3
-packaging==23.0
