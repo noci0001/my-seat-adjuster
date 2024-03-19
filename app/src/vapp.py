@@ -85,11 +85,11 @@ class SeatAdjusterApp(VehicleApp):
                     "status": 1,
                     "message": f"Failed to set the position {position}, error: {error}",
                 }
-            # except Exception:
-            #     response_data["result"] = {
-            #         "status": 1,
-            #         "message": "Exception on set Seat position",
-            #     }
+            except Exception as error:
+                response_data["result"] = {
+                    "status": 1,
+                    "message": f"Exception on set Seat position {position}, error: {error}",
+                }
 
         else:
             error_msg = f"""Not allowed to move seat because vehicle speed
