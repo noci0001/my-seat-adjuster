@@ -86,9 +86,10 @@ class SeatAdjusterApp(VehicleApp):
                     "message": f"Failed to set the position {position}, error: {error}",
                 }
             except Exception as error:
+                print(f"ERROR FROM EXCEPTION EXPANDS TO: {error}")
                 response_data["result"] = {
                     "status": 1,
-                    "message": f"Exception on set Seat position {position}, error: {error}",
+                    "message": f"Exception on set Seat position",
                 }
 
         else:
