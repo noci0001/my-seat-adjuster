@@ -152,7 +152,7 @@ async def test_on_set_position_request_received_error_path():
         "requestId": request_data["requestId"],
         "result": {
             "status": 1,
-            "message": f"Exception on set Seat position {position}, error: {error}",
+            "message": "Exception on set Seat position",
         },
     }
 
